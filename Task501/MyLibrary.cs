@@ -112,24 +112,6 @@ public class MyLibrary
     }
 
 
-    public static int[] ElPosition(int[] array)
-    {
-        int positoin = array.Length;
-        int result = 0;
-        for (int i = 0; i < positoin; i++)
-        {
-            if (array[i] % 2 == 0)
-            {
-                result = array[i]+1;
-            }
-            result += positoin;
-        }
-
-        {
-
-        }
-
-    }
 }
 
 
