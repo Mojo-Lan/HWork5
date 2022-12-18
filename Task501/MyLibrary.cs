@@ -92,15 +92,14 @@ public class MyLibrary
         return result;
     }
 
-/// <summary>
-/// Метод, который показывает количество четных чисел в массиве
-/// </summary>
-/// <param name="array"></param>
-/// <returns></returns>
+    /// <summary>
+    /// Метод, который показывает количество четных чисел в массиве
+    /// </summary>
+    /// <param name="array"></param>
+    /// <returns></returns>
     public static int NumEvenArray(int[] array)
     {
         int result = 0;
-        //int count = array.Length;
         for (int i = 0; i < array.Length; i++)
         {
             if (array[i] % 2 == 0)
@@ -111,8 +110,27 @@ public class MyLibrary
         }
         return result;
     }
-}
 
+
+    public static int[] ElPosition(int[] array)
+    {
+        int positoin = array.Length;
+        int result = 0;
+        for (int i = 0; i < positoin; i++)
+        {
+            if (array[i] % 2 == 0)
+            {
+                result = array[i]+1;
+            }
+            result += positoin;
+        }
+
+        {
+
+        }
+
+    }
+}
 
 
 

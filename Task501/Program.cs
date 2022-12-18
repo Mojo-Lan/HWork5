@@ -3,6 +3,7 @@
 //Напишите программу, которая покажет количество чётных чисел в массиве.
 //Например:
 // [345, 897, 568, 234] -> 2
+
 using static MyLibrary;
 
 public static class Array
@@ -14,7 +15,7 @@ public static class Array
         Fill(ar);                                         //Заполнили массив числами
         Console.WriteLine(Print(ar));                     //Напечатали массив
         Console.WriteLine("Количество четных чисел в массиве - " + NumEvenArray(ar));
-       // Console.WriteLine(NumEvenArray(  ar));
+       
 
     }
 }
