@@ -34,8 +34,8 @@ public class MyLibrary
     {
         for (int i = 0; i < array.Length; i++)
         {
-           array[i] = Random.Shared.Next(0, 100);
-          //  array[i] = new Random().Next( );  
+            array[i] = Random.Shared.Next(0, 100);
+            //  array[i] = new Random().Next( );  
         }
     }
     /// <summary>
@@ -112,11 +112,11 @@ public class MyLibrary
         return result;
     }
 
-/// <summary>
-/// Метод вычисление суммы чисел на нечетных позициях - ElPosition
-/// </summary>
-/// <param name="array"></param>
-/// <returns></returns>
+    /// <summary>
+    /// Метод вычисление суммы чисел на нечетных позициях - ElPosition
+    /// </summary>
+    /// <param name="array"></param>
+    /// <returns></returns>
     public static int ElPosition(int[] array)
     {
         int result = 0;
@@ -128,11 +128,9 @@ public class MyLibrary
             }
         }
         return result;
-        {
-        }
+
     }
-
-
+   
 }
 
 

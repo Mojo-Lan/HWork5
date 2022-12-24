@@ -19,7 +19,6 @@ public static class MyArray
         int[] ar = CreateArray(size);                                //Создали пустой массив
         Fill(ar);                                                    //Заполнили массив числами
         Console.WriteLine(Print(ar));                                //Напечатали массив
-        Console.WriteLine("Сумма элементов на нечетных позициях = " +ElPosition(ar));
-       // Console.WriteLine(ElPosition(ar));
+        Console.WriteLine("Сумма элементов на нечетных позициях = " + ElPosition(ar));   //напечатали сумму элементов из метода
     }
 }

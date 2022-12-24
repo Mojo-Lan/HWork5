@@ -34,8 +34,8 @@ public class MyLibrary
     {
         for (int i = 0; i < array.Length; i++)
         {
-           array[i] = Random.Shared.Next(0, 100);
-          //  array[i] = new Random().Next( );  
+            array[i] = Random.Shared.Next(0, 100);
+            //  array[i] = new Random().Next( );  
         }
     }
     /// <summary>
@@ -112,11 +112,11 @@ public class MyLibrary
         return result;
     }
 
-/// <summary>
-/// Метод вычисление суммы чисел на нечетных позициях - ElPosition
-/// </summary>
-/// <param name="array"></param>
-/// <returns></returns>
+    /// <summary>
+    /// Метод вычисление суммы чисел на нечетных позициях - ElPosition
+    /// </summary>
+    /// <param name="array"></param>
+    /// <returns></returns>
     public static int ElPosition(int[] array)
     {
         int result = 0;
@@ -131,7 +131,31 @@ public class MyLibrary
         {
         }
     }
+    /// <summary>
+    /// Метод нахождения максимального и минимального элементов массива и их разница.
+    /// </summary>
+    /// <param name="array"></param>
+    /// <param name="max"></param>
+    /// <param name="min"></param>
+    /// <returns></returns>
+    static int Difference(int[] array, int max, int min)
+    {
+        int size = array.Length;
+        max = array[0];
+        min = array[0];
+        for (int i = 0; i < size; i++)
+        {
+            if (array[i] > max)
+                max = array[i];
+            else
+            if (array[i] < min)
+                min = array[i];
+            array[i]++;
+        }
 
+        return size;
+
+    }
 
 }
 
